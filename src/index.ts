@@ -2,11 +2,12 @@ import TelegramBot from 'node-telegram-bot-api';
 import { TELEGRAM_TOKEN, ALLOWED_USERS, SSR_LINKS, CHECK_INTERVAL, HOUR_DURATION } from './config';
 import { fetchProjects, Project } from './utils/parser';
 import { formatProjectMessage } from './utils/message';
-import { isRecent } from './utils/resend';
+import { isRecent } from './utils/resent';
+import { startPingServer } from './utils/ping-server';
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
-
+startPingServer();
 bot.on('message', (msg) => {
     const userId = msg.from?.id;
 
