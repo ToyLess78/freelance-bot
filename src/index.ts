@@ -24,7 +24,9 @@ bot.on('message', (msg) => {
 });
 
 async function checkUpdates() {
-    console.log('Перевіряємо оновлення...');
+    console.log('=== Початок перевірки ===');
+    console.log('Поточний час:', new Date().toISOString());
+    console.log('HOUR_DURATION:', HOUR_DURATION);
     console.log('SSR_LINKS:', SSR_LINKS);
 
     for (const url of SSR_LINKS) {
