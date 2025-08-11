@@ -1,0 +1,23 @@
+{
+  "name": "freelancehunt-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "node-telegram-bot-api": "^0.63.0",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/node-telegram-bot-api": "^0.64.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
